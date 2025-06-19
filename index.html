@@ -1,36 +1,155 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EduKüp | STEM Eğitim Kiti</title>
-  <link rel="stylesheet" href="style.css" />
+    <title>EduKüp - STEM Eğitim Kiti</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="EduKüp - LEGO Spike Prime benzeri modüler STEM eğitim kiti">
+    <meta name="keywords" content="EduKüp, STEM, Eğitim, Robotik, Kodlama, Lego, Spike Prime, Eğitim Seti">
+    <meta name="author" content="EduKüp">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            font: 20px Montserrat, sans-serif;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .margin {
+            margin-bottom: 45px;
+        }
+
+        .bg-1 {
+            background-color: #0077cc;
+            color: #ffffff;
+        }
+
+        .bg-2 {
+            background-color: #00aabb;
+            color: #ffffff;
+        }
+
+        .bg-3 {
+            background-color: #ffffff;
+            color: #333333;
+        }
+
+        .bg-4 {
+            background-color: #004466;
+            color: #ffffff;
+        }
+
+        .container-fluid {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+
+        .navbar {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: 0;
+            border-radius: 0;
+            margin-bottom: 0;
+            font-size: 12px;
+            letter-spacing: 5px;
+        }
+
+        .navbar-nav li a:hover {
+            color: #ffcc00 !important;
+        }
+
+        .social-icon {
+            font-size: 2.5em;
+            margin: 0 10px;
+            color: #fff;
+        }
+    </style>
 </head>
+
 <body>
-  <header>
-    <h1>EduKüp</h1>
-    <p>STEM ile Geleceği İnşa Et</p>
-  </header>
 
-  <main>
-    <section>
-      <h2>Ürün Özellikleri</h2>
-      <ul>
-        <li>LEGO Spike Prime uyumlu modüler yapı</li>
-        <li>Kodlama öğrenmeye uygun</li>
-        <li>Sensör ve motor desteği</li>
-      </ul>
-    </section>
+    <!-- Splash Screen -->
+    <div id="splash-screen">
+        <div id="splash-logo" style="text-align:center;font-size:3em;margin-top:20%;color:#0077cc;">EduKüp</div>
+    </div>
 
-    <section>
-      <h2>İletişim</h2>
-      <p>info@edukup.com</p>
-    </section>
-  </main>
+    <!-- Navbar -->
+    <nav class="navbar navbar-default fade-in">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#eduNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">EduKüp</a>
+            </div>
+            <div class="collapse navbar-collapse" id="eduNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#hakkimizda">Hakkımızda</a></li>
+                    <li><a href="#urun">Ürün</a></li>
+                    <li><a href="#iletisim">İletişim</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  <footer>
-    <p>&copy; 2025 EduKüp</p>
-  </footer>
+    <!-- Hakkımızda -->
+    <div id="hakkimizda" class="container-fluid bg-1 text-center fade-in">
+        <h3 class="margin">EduKüp'e Hoş Geldiniz</h3>
+        <p>EduKüp, çocuklar ve gençler için tasarlanmış modüler bir STEM eğitim kitidir. Kodlama, robotik ve elektronik öğrenimini eğlenceli hale getiriyoruz.</p>
+        <img src="img/edukup-logo.jpg" class="img-responsive img-circle margin" style="display:inline" alt="EduKüp Logo" width="350" height="350">
+    </div>
+
+    <!-- Ürün Tanıtımı -->
+    <div id="urun" class="container-fluid bg-2 text-center fade-in">
+        <h3 class="margin">Ürün Özellikleri</h3>
+        <p>EduKüp, LEGO Spike Prime benzeri şekilde tasarlanmış; programlanabilir, sensör destekli, çok yönlü bir eğitim setidir.</p>
+        <ul style="list-style: none; padding-left: 0;">
+            <li>✅ Blok tabanlı kodlama (Scratch uyumlu)</li>
+            <li>✅ Modüler yapı - Kolay monte edilir</li>
+            <li>✅ Motor ve sensör desteği</li>
+            <li>✅ STEM müfredatına tam uyum</li>
+        </ul>
+        <a href="#iletisim" class="btn btn-default btn-lg">
+            <span class="glyphicon glyphicon-envelope"></span> Sipariş ve Bilgi
+        </a>
+    </div>
+
+    <!-- İletişim -->
+    <div id="iletisim" class="container-fluid bg-3 text-center fade-in">
+        <h3 class="margin">İletişim</h3>
+        <p>Okullar, öğretmenler ve aileler için özel fırsatlarımızdan yararlanmak için bize ulaşın!</p>
+        <p><span class="glyphicon glyphicon-map-marker"></span> İstanbul, Türkiye</p>
+        <p><span class="glyphicon glyphicon-phone"></span> +90 555 123 45 67</p>
+        <p><span class="glyphicon glyphicon-envelope"></span> info@edukup.com</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-4 text-center fade-in">
+        <p>&copy; 2025 EduKüp</p>
+        <a href="https://www.instagram.com/edukup" target="_blank" class="social-icon"><i class="fa fa-instagram"></i></a>
+        <a href="https://linkedin.com/company/edukup" target="_blank" class="social-icon"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/@edukup" target="_blank" class="social-icon"><i class="fa fa-youtube"></i></a>
+    </footer>
+
+    <script>
+        // Splash screen efekt
+        window.addEventListener("load", function () {
+            setTimeout(function () {
+                document.getElementById("splash-screen").style.opacity = "0";
+                setTimeout(function () {
+                    document.getElementById("splash-screen").style.display = "none";
+                }, 1000);
+            }, 3000);
+        });
+    </script>
 </body>
+
 </html>
