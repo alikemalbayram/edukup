@@ -1,155 +1,164 @@
 <!DOCTYPE html>
 <html lang="tr">
-
 <head>
-    <title>EduKüp - STEM Eğitim Kiti</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="EduKüp - LEGO Spike Prime benzeri modüler STEM eğitim kiti">
-    <meta name="keywords" content="EduKüp, STEM, Eğitim, Robotik, Kodlama, Lego, Spike Prime, Eğitim Seti">
-    <meta name="author" content="EduKüp">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <style>
-        body {
-            font: 20px Montserrat, sans-serif;
-            line-height: 1.8;
-            color: #333;
-        }
-
-        .margin {
-            margin-bottom: 45px;
-        }
-
-        .bg-1 {
-            background-color: #0077cc;
-            color: #ffffff;
-        }
-
-        .bg-2 {
-            background-color: #00aabb;
-            color: #ffffff;
-        }
-
-        .bg-3 {
-            background-color: #ffffff;
-            color: #333333;
-        }
-
-        .bg-4 {
-            background-color: #004466;
-            color: #ffffff;
-        }
-
-        .container-fluid {
-            padding-top: 70px;
-            padding-bottom: 70px;
-        }
-
-        .navbar {
-            padding-top: 15px;
-            padding-bottom: 15px;
-            border: 0;
-            border-radius: 0;
-            margin-bottom: 0;
-            font-size: 12px;
-            letter-spacing: 5px;
-        }
-
-        .navbar-nav li a:hover {
-            color: #ffcc00 !important;
-        }
-
-        .social-icon {
-            font-size: 2.5em;
-            margin: 0 10px;
-            color: #fff;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EduKüp - STEM Eğitim Kiti</title>
+  <meta name="description" content="EduKüp - Yerli üretim, yapay zekâ destekli STEM eğitim kiti.">
+  <meta name="keywords" content="EduKüp, STEM, Robotik, Kodlama, Eğitim Seti, Spike Prime, Arduino, Yapay Zeka">
+  <meta name="author" content="EduKüp Teknoloji">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      font: 18px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #333;
+    }
+    .navbar {
+      letter-spacing: 2px;
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    .navbar-nav li a:hover {
+      color: #f0ad4e !important;
+    }
+    .container-fluid {
+      padding: 60px 50px;
+    }
+    .bg-primary {
+      background-color: #0077cc;
+      color: #fff;
+    }
+    .bg-light {
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    .bg-secondary {
+      background-color: #00aabb;
+      color: #fff;
+    }
+    .bg-dark {
+      background-color: #222;
+      color: #fff;
+    }
+    .btn-lg {
+      margin: 10px;
+    }
+    .social-icon {
+      font-size: 2em;
+      margin: 0 10px;
+      color: #fff;
+    }
+    blockquote {
+      font-style: italic;
+      margin: 30px auto;
+      max-width: 600px;
+    }
+  </style>
 </head>
-
 <body>
 
-    <!-- Splash Screen -->
-    <div id="splash-screen">
-        <div id="splash-logo" style="text-align:center;font-size:3em;margin-top:20%;color:#0077cc;">EduKüp</div>
-    </div>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-default fade-in">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#eduNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">EduKüp</a>
-            </div>
-            <div class="collapse navbar-collapse" id="eduNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#hakkimizda">Hakkımızda</a></li>
-                    <li><a href="#urun">Ürün</a></li>
-                    <li><a href="#iletisim">İletişim</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hakkımızda -->
-    <div id="hakkimizda" class="container-fluid bg-1 text-center fade-in">
-        <h3 class="margin">EduKüp'e Hoş Geldiniz</h3>
-        <p>EduKüp, çocuklar ve gençler için tasarlanmış modüler bir STEM eğitim kitidir. Kodlama, robotik ve elektronik öğrenimini eğlenceli hale getiriyoruz.</p>
-        <img src="img/edukup-logo.jpg" class="img-responsive img-circle margin" style="display:inline" alt="EduKüp Logo" width="350" height="350">
-    </div>
-
-    <!-- Ürün Tanıtımı -->
-    <div id="urun" class="container-fluid bg-2 text-center fade-in">
-        <h3 class="margin">Ürün Özellikleri</h3>
-        <p>EduKüp, LEGO Spike Prime benzeri şekilde tasarlanmış; programlanabilir, sensör destekli, çok yönlü bir eğitim setidir.</p>
-        <ul style="list-style: none; padding-left: 0;">
-            <li>✅ Blok tabanlı kodlama (Scratch uyumlu)</li>
-            <li>✅ Modüler yapı - Kolay monte edilir</li>
-            <li>✅ Motor ve sensör desteği</li>
-            <li>✅ STEM müfredatına tam uyum</li>
+  <!-- Navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">EduKüp</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNav">
+          <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#hero">Anasayfa</a></li>
+          <li><a href="#urun">Ürün</a></li>
+          <li><a href="#egitim">Eğitim</a></li>
+          <li><a href="#yorumlar">Yorumlar</a></li>
+          <li><a href="#iletisim">İletişim</a></li>
         </ul>
-        <a href="#iletisim" class="btn btn-default btn-lg">
-            <span class="glyphicon glyphicon-envelope"></span> Sipariş ve Bilgi
-        </a>
+      </div>
     </div>
+  </nav>
 
-    <!-- İletişim -->
-    <div id="iletisim" class="container-fluid bg-3 text-center fade-in">
-        <h3 class="margin">İletişim</h3>
-        <p>Okullar, öğretmenler ve aileler için özel fırsatlarımızdan yararlanmak için bize ulaşın!</p>
-        <p><span class="glyphicon glyphicon-map-marker"></span> İstanbul, Türkiye</p>
-        <p><span class="glyphicon glyphicon-phone"></span> +90 555 123 45 67</p>
-        <p><span class="glyphicon glyphicon-envelope"></span> info@edukup.com</p>
+  <!-- Hero Section -->
+  <div id="hero" class="container-fluid bg-primary text-center" style="padding-top:100px;">
+    <h1 class="display-3">EduKüp</h1>
+    <p class="lead">Yerli Üretim. Yapay Zekâ Destekli. Modüler STEM Eğitim Kiti.</p>
+    <a href="#urun" class="btn btn-warning btn-lg">Ürünü Keşfet</a>
+    <a href="#egitim" class="btn btn-default btn-lg">Eğitim İçeriği</a>
+    <div class="embed-responsive embed-responsive-16by9" style="margin-top:30px;">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
     </div>
+  </div>
 
-    <!-- Footer -->
-    <footer class="container-fluid bg-4 text-center fade-in">
-        <p>&copy; 2025 EduKüp</p>
-        <a href="https://www.instagram.com/edukup" target="_blank" class="social-icon"><i class="fa fa-instagram"></i></a>
-        <a href="https://linkedin.com/company/edukup" target="_blank" class="social-icon"><i class="fa fa-linkedin"></i></a>
-        <a href="https://www.youtube.com/@edukup" target="_blank" class="social-icon"><i class="fa fa-youtube"></i></a>
-    </footer>
+  <!-- Ürün Bilgisi -->
+  <div id="urun" class="container-fluid bg-light text-center">
+    <h2>EduKüp Nedir?</h2>
+    <p class="lead">EduKüp, programlanabilir, sensör destekli, yapay zekâ uyumlu modüler bir eğitim kitidir.</p>
+    <div class="row text-center">
+      <div class="col-sm-4">
+        <i class="fa fa-cogs fa-3x"></i>
+        <h4>Donanım</h4>
+        <p>Motorlar, sensörler, mikrodenetleyici kart</p>
+      </div>
+      <div class="col-sm-4">
+        <i class="fa fa-code fa-3x"></i>
+        <h4>Yazılım</h4>
+        <p>Scratch & Python destekli kodlama altyapısı</p>
+      </div>
+      <div class="col-sm-4">
+        <i class="fa fa-brain fa-3x"></i>
+        <h4>Yapay Zekâ</h4>
+        <p>Görüntü işleme, sesli komut ve daha fazlası</p>
+      </div>
+    </div>
+  </div>
 
-    <script>
-        // Splash screen efekt
-        window.addEventListener("load", function () {
-            setTimeout(function () {
-                document.getElementById("splash-screen").style.opacity = "0";
-                setTimeout(function () {
-                    document.getElementById("splash-screen").style.display = "none";
-                }, 1000);
-            }, 3000);
-        });
-    </script>
+  <!-- Eğitim İçeriği -->
+  <div id="egitim" class="container-fluid bg-secondary text-center">
+    <h2>Eğitmenler İçin</h2>
+    <p class="lead">EduKüp, öğretmenlerin STEM eğitiminde güvenle kullanabileceği bir araçtır.</p>
+    <ul class="list-unstyled">
+      <li>✔ MEB müfredatına tam uyum</li>
+      <li>✔ PDF/video eğitim materyalleri</li>
+      <li>✔ Sertifikalı öğretmen eğitimleri</li>
+      <li>✔ Öğrenci başarı takibi (çok yakında)</li>
+    </ul>
+  </div>
+
+  <!-- Yorumlar ve Destekçiler -->
+  <div id="yorumlar" class="container-fluid bg-light text-center">
+    <h2>Kullanıcı Yorumları</h2>
+    <blockquote>"Kodlama derslerimiz EduKüp ile çok daha eğlenceli hale geldi!" – Öğretmen Ayşe</blockquote>
+    <blockquote>"Evde çocuğum kendi robotunu yapabiliyor, harika bir ürün." – Veli Mehmet</blockquote>
+    <h3>Bizi Destekleyenler</h3>
+    <img src="img/tubitak.png" alt="TÜBİTAK" height="50">
+    <img src="img/meb.png" alt="MEB" height="50">
+  </div>
+
+  <!-- İletişim -->
+  <div id="iletisim" class="container-fluid bg-dark text-center">
+    <h2>Bize Ulaşın</h2>
+    <p><i class="fa fa-envelope"></i> info@edukup.com</p>
+    <p><i class="fa fa-phone"></i> +90 555 123 45 67</p>
+    <a href="https://wa.me/905551234567" target="_blank" class="btn btn-success"><i class="fa fa-whatsapp"></i> WhatsApp'tan Yaz</a>
+    <div class="embed-responsive embed-responsive-16by9" style="margin-top:30px;">
+      <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18..." allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="container-fluid bg-primary text-center">
+    <p>&copy; 2025 EduKüp Teknoloji</p>
+    <a href="https://instagram.com/edukup" class="social-icon"><i class="fa fa-instagram"></i></a>
+    <a href="https://linkedin.com/company/edukup" class="social-icon"><i class="fa fa-linkedin"></i></a>
+    <a href="https://youtube.com/@edukup" class="social-icon"><i class="fa fa-youtube"></i></a>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </body>
-
 </html>
